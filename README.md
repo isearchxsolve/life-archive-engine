@@ -1,5 +1,7 @@
 # life-archive
 
+[![tests](https://github.com/isearchxsolve/life-archive-engine/actions/workflows/tests.yml/badge.svg)](https://github.com/isearchxsolve/life-archive-engine/actions/workflows/tests.yml)
+
 **A provenance-first ingestion engine for a personal digital archive.**
 
 Point it at the places your life is stored — a filesystem, Git repositories, GitHub accounts,
