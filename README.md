@@ -32,6 +32,15 @@ Personal archives rot in three specific ways, and each one is an engineering pro
    (and can redact) *before* storage, so a later export or publish step has something real to
    filter on rather than a folder name someone remembered to use.
 
+## See it run
+
+![demo](docs/demo.gif)
+
+Real output from a fresh archive - `ingest` → `status` → idempotent re-ingest → `verify` → `search`,
+with the transcript in [`docs/DEMO.md`](docs/DEMO.md). That demo is also where two known defects
+(MIME detection for `.md`, duplicate rows in manifest-scan search) were found and filed rather than
+polished away.
+
 ## Install
 
 ```bash
@@ -101,6 +110,11 @@ Test suite:
 ```bash
 pytest tests/python -q
 ```
+
+## Contributing
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) — one behaviour per PR, a test that fails
+before it passes, and no weakening of existing tests to get green.
 
 ## License
 
